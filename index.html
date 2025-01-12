@@ -8,7 +8,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <script src="scripts.js"></script>
     <title>Conversor de moedas</title>
 </head>
 
@@ -33,7 +32,7 @@
 
         <label class="valor">
             Valor
-            <input placeholder="R$ escolha o valor">
+            <input class="input-currency" placeholder="R$ escolha o valor">
         </label>
 
         <button class="convert-button">Converter</button>
@@ -42,7 +41,7 @@
             <div class="currency-box">
                 <img src="assets/brasil.png" alt="logo real">
                 <p class="currency">Real</p>
-                <p class="currency-value">R$ 0,00</p>
+                <p class="currency-value-to-convert">R$ 0,00</p>
             </div>
 
             <img class="arrow" src="assets/seta.png" alt="seta">
@@ -55,5 +54,5 @@
         </section>
     </main>
 </body>
-
+<script src="scripts.js"></script>
 </html>
