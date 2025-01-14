@@ -64,13 +64,13 @@ function convertValues() {
             currencyValueConverted.innerHTML = new Intl.NumberFormat("de-DE", {
                 style: "currency",
                 currency: "EUR"
-            }).format(inputCurrencyValue / dolartoeuroToday)
+            }).format(inputCurrencyValue * dolartoeuroToday)
         }
         if (currencySelectConverted.value == "libra") {
             currencyValueConverted.innerHTML = new Intl.NumberFormat('de-DE', {
                 style: "currency",
                 currency: "GBP"
-            }).format(inputCurrencyValue / dolartolibraToday)
+            }).format(inputCurrencyValue * dolartolibraToday)
         }
         if (currencySelectConverted.value == "bitcoin") {
             currencyValueConverted.innerHTML = new Intl.NumberFormat('de-DE', {
@@ -91,7 +91,7 @@ function convertValues() {
             currencyValueConverted.innerHTML = new Intl.NumberFormat("en-US", {
                 style: "currency",
                 currency: "USD"
-            }).format(inputCurrencyValue * dolartoeuroToday)
+            }).format(inputCurrencyValue / dolartoeuroToday)
         }
         if (currencySelectConverted.value == "euro") {
             currencyValueConverted.innerHTML = new Intl.NumberFormat("de-DE", {
@@ -103,7 +103,7 @@ function convertValues() {
             currencyValueConverted.innerHTML = new Intl.NumberFormat('de-DE', {
                 style: "currency",
                 currency: "GBP"
-            }).format(inputCurrencyValue / eurotolibraToday)
+            }).format(inputCurrencyValue * eurotolibraToday)
         }
         if (currencySelectConverted.value == "bitcoin") {
             currencyValueConverted.innerHTML = new Intl.NumberFormat('de-DE', {
@@ -124,13 +124,13 @@ function convertValues() {
             currencyValueConverted.innerHTML = new Intl.NumberFormat("en-US", {
                 style: "currency",
                 currency: "USD"
-            }).format(inputCurrencyValue * dolartolibraToday)
+            }).format(inputCurrencyValue / dolartolibraToday)
         }
         if (currencySelectConverted.value == "euro") {
             currencyValueConverted.innerHTML = new Intl.NumberFormat("de-DE", {
                 style: "currency",
                 currency: "EUR"
-            }).format(inputCurrencyValue * eurotolibraToday)
+            }).format(inputCurrencyValue / eurotolibraToday)
         }
         if (currencySelectConverted.value == "libra") {
             currencyValueConverted.innerHTML = new Intl.NumberFormat('de-DE', {
